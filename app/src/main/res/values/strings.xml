@@ -12,7 +12,17 @@
     <string name="error_incorrect_password">Le mot de passe n\'est pas valide</string>
     <string name="error_field_required">Ce champs est requis</string>
     <string name="title_activity_register">Créer un compte</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
-    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_activity_home">Page d\'accueil</string>
+    <string name="title_activity_user_info">Modifier ses informations personnelles</string>
+
+    <string name="menu_perso">Dossier personnel</string>
+    <string name="menu_share">Dossiers partagés</string>
+    <string name="menu_userInfo">Modifier ses informations personnelles</string>
+    <string name="menu_storageSpace">Gestion de l\'espace de stockage</string>
+    <string name="menu_logout">Déconnexion</string>
+
+
+
+
 </resources>

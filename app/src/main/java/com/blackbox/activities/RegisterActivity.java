@@ -26,7 +26,7 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends Activity {
 
-    private RegisterTask mAuthTask = null;
+    private static RegisterTask mAuthTask = null;
 
     private static Context context;
 
@@ -41,6 +41,9 @@ public class RegisterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        RegisterActivity.context = getApplicationContext();
+
         mNameView = (EditText) findViewById(R.id.name);
         mFirstNameView = (EditText) findViewById(R.id.firstname);
         mEmailView = (EditText) findViewById(R.id.email);
@@ -144,6 +147,8 @@ public class RegisterActivity extends Activity {
                 intent.putExtra("userId", result.getString("_id"));
                 RegisterActivity.context.startActivity(intent);
             }
+            mAuthTask.cancel(true);
+            mAuthTask = null;
         }
         catch (JSONException error) {
             Toast.makeText(RegisterActivity.context, error.getMessage(), Toast.LENGTH_SHORT).show();

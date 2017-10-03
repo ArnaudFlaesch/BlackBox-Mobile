@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_perso"
+          android:title="@string/menu_perso"/>
+    <item android:id="@+id/action_share"
+          android:title="@string/menu_share"/>
+    <item android:id="@+id/action_userInfo"
+          android:title="@string/menu_userInfo"/>
+    <item android:id="@+id/action_storageSpace"
+          android:title="@string/menu_storageSpace"/>
+    <item android:id="@+id/action_logout"
+          android:title="@string/menu_logout"/>
+</menu>

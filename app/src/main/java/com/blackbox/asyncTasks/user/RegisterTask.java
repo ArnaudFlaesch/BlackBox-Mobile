@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.blackbox.activities.LoginActivity;
+import com.blackbox.activities.RegisterActivity;
 import com.blackbox.model.User;
 import com.blackbox.utils.NetworkUtils;
 
@@ -67,7 +68,7 @@ public class RegisterTask extends AsyncTask<Void, Void, ResponseBody> {
     protected void onPostExecute(final ResponseBody responseBody) {
         try {
             JSONObject result = new JSONObject(responseBody.string());
-            LoginActivity.getAsyncTaskResult(result);
+            RegisterActivity.getAsyncTaskResult(result);
         }
         catch (IOException | JSONException error) {
             Log.e("ERROR", error.getMessage());
